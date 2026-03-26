@@ -17,12 +17,13 @@
             --black-soft: #2D2D2D;
             --white: #FEFCF3;
             --white-pure: #FFFFFF;
-            --coral: #E8503A;
-            --coral-dark: #C9392A;
+            --accent: #E8503A;
+            --accent-dark: #C9392A;
+            --accent-light: #F07060;
             --wood: #4A3728;
-            --wood-light: #6B5544;
-            --green: #4CAF50;
-            --green-light: #81C784;
+            --wood-light: #8B7355;
+            --green: #7A8C3C;
+            --green-light: #9AAF5C;
 
             --fun: 'Lilita One', sans-serif;
             --body: 'Nunito', sans-serif;
@@ -113,7 +114,7 @@
             background: var(--yellow);
         }
         .deco-cross {
-            font-family: var(--fun); color: var(--coral);
+            font-family: var(--fun); color: var(--accent);
             font-size: 1.5rem; opacity: 0.3;
         }
         .deco-squiggle {
@@ -143,18 +144,18 @@
             text-transform: uppercase; letter-spacing: 0.05em;
             transition: color 0.2s;
         }
-        .nav-link:hover { color: var(--coral); }
+        .nav-link:hover { color: var(--accent); }
         .nav-cta {
             font-family: var(--fun); font-size: 0.85rem;
             background: var(--black); color: var(--yellow);
             padding: 0.5rem 1.2rem; border-radius: 50px;
             text-decoration: none;
             transition: transform 0.3s, box-shadow 0.3s;
-            box-shadow: 3px 3px 0 var(--coral);
+            box-shadow: 3px 3px 0 var(--wood);
         }
         .nav-cta:hover {
             transform: translateY(-2px);
-            box-shadow: 4px 5px 0 var(--coral);
+            box-shadow: 4px 5px 0 var(--wood);
         }
 
         /* === HERO === */
@@ -190,7 +191,7 @@
             margin-bottom: 1.5rem;
             opacity: 0; animation: scaleIn 0.5s cubic-bezier(0.34,1.56,0.64,1) 0.2s forwards;
         }
-        .hero-sticker .rating-star { color: var(--coral); }
+        .hero-sticker .rating-star { color: var(--accent); }
 
         .hero-title {
             font-family: var(--fun); font-size: clamp(4rem, 15vw, 10rem);
@@ -227,13 +228,13 @@
             background: var(--black); color: var(--yellow);
             padding: 0.9rem 2rem; border-radius: 50px;
             text-decoration: none; border: none; cursor: pointer;
-            box-shadow: 4px 4px 0 var(--coral);
+            box-shadow: 4px 4px 0 var(--wood);
             transition: all 0.3s ease;
             display: inline-flex; align-items: center; gap: 0.5rem;
         }
         .btn-primary:hover {
             transform: translateY(-3px) rotate(-1deg);
-            box-shadow: 5px 7px 0 var(--coral);
+            box-shadow: 5px 7px 0 var(--wood);
         }
 
         .btn-secondary {
@@ -277,8 +278,9 @@
             color: var(--yellow);
         }
         .marquee-dot {
-            width: 8px; height: 8px; background: var(--coral);
+            width: 8px; height: 8px; background: var(--yellow);
             border-radius: 50%; flex-shrink: 0;
+            opacity: 0.5;
         }
 
         /* === ABOUT === */
@@ -296,11 +298,11 @@
             display: inline-flex; align-items: center; gap: 0.4rem;
             font-family: var(--mono); font-size: 0.65rem; font-weight: 700;
             letter-spacing: 0.15em; text-transform: uppercase;
-            color: var(--coral); margin-bottom: 1rem;
+            color: var(--accent); margin-bottom: 1rem;
         }
         .section-tag::before {
             content: ''; width: 8px; height: 8px; border-radius: 50%;
-            background: var(--coral);
+            background: var(--accent);
         }
 
         .about-heading {
@@ -309,7 +311,7 @@
         }
         .about-heading .highlight {
             color: var(--white-pure);
-            background: var(--coral);
+            background: var(--accent);
             padding: 0 0.3em;
             transform: rotate(-1deg);
             display: inline-block;
@@ -332,7 +334,7 @@
         }
         .stat-card:hover { transform: translateY(-4px) rotate(-2deg); }
         .stat-num {
-            font-family: var(--fun); font-size: 2.2rem; color: var(--coral);
+            font-family: var(--fun); font-size: 2.2rem; color: var(--accent);
             line-height: 1;
         }
         .stat-label {
@@ -359,10 +361,10 @@
         /* Floating sticker on image */
         .img-sticker {
             position: absolute; z-index: 3;
-            background: var(--coral); color: var(--white-pure);
+            background: var(--yellow); color: var(--black);
             font-family: var(--fun); font-size: 0.8rem;
             padding: 0.6rem 1rem; border-radius: 50px;
-            box-shadow: 3px 3px 0 var(--black);
+            box-shadow: 3px 3px 0 var(--accent-dark);
             transform: rotate(-6deg);
             animation: float 4s ease-in-out infinite;
         }
@@ -457,7 +459,7 @@
         .special-badge {
             font-family: var(--body); font-size: 0.55rem; font-weight: 800;
             text-transform: uppercase; letter-spacing: 0.08em;
-            background: var(--coral); color: var(--white-pure);
+            background: var(--yellow); color: var(--black);
             padding: 0.15rem 0.5rem; border-radius: 4px;
             display: inline-block; margin-top: 0.25rem;
         }
@@ -470,7 +472,7 @@
 
         /* === BESTELLEN BANNER === */
         .order-banner {
-            padding: 4rem 1.5rem; background: var(--coral);
+            padding: 4rem 1.5rem; background: var(--accent);
             text-align: center; position: relative; overflow: hidden;
         }
         .order-banner::before {
@@ -492,10 +494,10 @@
         }
         .platform-btn {
             font-family: var(--body); font-weight: 700; font-size: 0.8rem;
-            background: var(--white-pure); color: var(--coral);
+            background: var(--yellow); color: var(--black);
             padding: 0.7rem 1.5rem; border-radius: 50px;
-            text-decoration: none; border: 3px solid var(--white-pure);
-            box-shadow: 3px 3px 0 rgba(0,0,0,0.2);
+            text-decoration: none; border: 3px solid var(--yellow);
+            box-shadow: 3px 3px 0 rgba(0,0,0,0.3);
             transition: all 0.3s ease;
         }
         .platform-btn:hover {
@@ -549,11 +551,11 @@
         .hours-time {
             font-family: var(--mono); font-size: 0.8rem; color: #777;
         }
-        .hours-row.today .hours-day { color: var(--coral); }
+        .hours-row.today .hours-day { color: var(--accent); }
         .hours-row.today .hours-time {
-            color: var(--coral); font-weight: 700;
+            color: var(--accent); font-weight: 700;
         }
-        .hours-row.closed .hours-time { color: var(--coral); }
+        .hours-row.closed .hours-time { color: #999; font-style: italic; }
 
         /* Map card */
         .map-card {
@@ -631,7 +633,7 @@
             .about-inner { grid-template-columns: 5fr 4fr; gap: 5rem; }
         }
 
-        a:focus-visible, button:focus-visible { outline: 3px solid var(--coral); outline-offset: 4px; }
+        a:focus-visible, button:focus-visible { outline: 3px solid var(--accent); outline-offset: 4px; }
         ::-webkit-scrollbar { width: 8px; }
         ::-webkit-scrollbar-track { background: var(--black); }
         ::-webkit-scrollbar-thumb { background: var(--yellow); border-radius: 4px; }
@@ -735,9 +737,9 @@
                 </div>
             </div>
             <div class="about-image-wrap reveal-pop" style="transition-delay:0.15s">
-                <div class="img-sticker" style="top:-15px;right:20px;">YUM! &#128523;</div>
+                <div class="img-sticker" style="top:-15px;right:20px;">HAUSGEMACHT!</div>
                 <div class="about-image">
-                    <img src="../dagis-doener/food-hero.png" alt="Frische Döner bei BUBA DÖNER in Essen" loading="lazy">
+                    <img src="food.jpg" alt="Catering-Platte von BUBA DÖNER: Falafel, Köfte, Reis, Fladenbrot, Soßen" loading="lazy">
                 </div>
             </div>
         </div>
